@@ -1,0 +1,17 @@
+{
+    "parameters" : {
+        "port" : 3000
+    },
+
+    "services" : {
+        "HelloController" : {
+            "file" :"../src/Controller/HelloController",
+            "arguments" : ["@HelloService"] 
+        },
+
+         "HelloService" : {
+            "file" :"../src/Service/HelloService",
+            "arguments" : [] 
+        }
+    }
+}
